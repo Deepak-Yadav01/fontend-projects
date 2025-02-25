@@ -1,0 +1,206 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+/* Container */
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Left Section */
+.left {
+    width: 65%;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #003366;  /* Dark Blue IRCTC Theme */
+    color: white;
+    border-radius: 8px;
+}
+
+.navbar .logos img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.nav-content {
+    display: flex;
+    align-items:flex-start;
+}
+
+.nav-content ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-content li {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.nav-content button {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.nav-content .selected {
+    background-color: #ff6600;  /* IRCTC Orange */
+    color: white;
+}
+
+.nav-content button:hover {
+    background-color: #00509d;
+    color: white;
+}
+
+/* Main Content */
+.main-content {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.main-content h1 {
+    font-size: 36px;
+    color: #003366;
+}
+
+.sub-title {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.sub-title .green {
+    color: green;
+}
+
+.sub-title .orange {
+    color: orange;
+}
+
+.sub-title .blue {
+    color: blue;
+}
+
+/* Ticket Booking Buttons */
+.status-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.status-container button {
+    background-color: white;
+    border: 2px solid #003366;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.status-container button.selected {
+    background-color: #ff6600;
+    color: white;
+}
+
+.status-container button img {
+    height: 20px;
+}
+
+/* Journey Details */
+.journey-details, .journey-Time-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    background-color: #e3e3e3;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.journey-details span, .journey-Time-details span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+/* Search Button */
+.search-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-section button {
+    background-color: #003366;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.search-section button:hover {
+    background-color: #ff6600;
+}
+
+/* Right Section */
+.right {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
+.right img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .left, .right {
+        width: 100%;
+    }
+    .status-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .journey-details, .journey-Time-details {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
